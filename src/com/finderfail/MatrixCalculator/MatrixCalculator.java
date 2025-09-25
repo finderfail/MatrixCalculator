@@ -18,7 +18,7 @@ public class MatrixCalculator extends JFrame {
 
         JPanel topPanel = new JPanel();
         topPanel.add(new JLabel("Размер матрицы:"));
-        sizeBox = new JComboBox<>(new Integer[]{2,3,4});
+        sizeBox = new JComboBox<>(new Integer[]{2,3,4,5,6,7});
         sizeBox.setSelectedItem(2);
         sizeBox.addActionListener(e -> rebuildMatrixFields());
         topPanel.add(sizeBox);
