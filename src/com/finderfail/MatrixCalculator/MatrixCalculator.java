@@ -13,12 +13,12 @@ public class MatrixCalculator extends JFrame {
     public MatrixCalculator() {
         super("Калькулятор матриц");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(600, 500);
+        setSize(854, 480);
         setLayout(new BorderLayout());
 
         JPanel topPanel = new JPanel();
         topPanel.add(new JLabel("Размер матрицы:"));
-        sizeBox = new JComboBox<>(new Integer[]{2,3,4,5,6,7});
+        sizeBox = new JComboBox<>(new Integer[]{2,3,4,5,6,7,8,9,10});
         sizeBox.setSelectedItem(2);
         sizeBox.addActionListener(e -> rebuildMatrixFields());
         topPanel.add(sizeBox);
